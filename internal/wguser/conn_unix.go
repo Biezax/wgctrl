@@ -5,7 +5,7 @@ package wguser
 
 import (
 	"errors"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/wgtypes"
 	"io/fs"
 	"net"
 	"os"

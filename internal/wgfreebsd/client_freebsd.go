@@ -17,10 +17,10 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/danpashin/wgctrl/internal/wgfreebsd/internal/nv"
-	"github.com/danpashin/wgctrl/internal/wgfreebsd/internal/wgh"
-	"github.com/danpashin/wgctrl/internal/wginternal"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/internal/wgfreebsd/internal/nv"
+	"github.com/Biezax/wgctrl/internal/wgfreebsd/internal/wgh"
+	"github.com/Biezax/wgctrl/internal/wginternal"
+	"github.com/Biezax/wgctrl/wgtypes"
 	"golang.org/x/sys/unix"
 )
 

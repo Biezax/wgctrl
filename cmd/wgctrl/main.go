@@ -9,8 +9,8 @@ import (
 	"net"
 	"strings"
 
-	"github.com/danpashin/wgctrl"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl"
+	"github.com/Biezax/wgctrl/wgtypes"
 )
 
 func main() {

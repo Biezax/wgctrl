@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/wgtypes"
 	"github.com/google/go-cmp/cmp"
 )
 

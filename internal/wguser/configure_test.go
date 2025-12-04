@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/danpashin/wgctrl/internal/wgtest"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/internal/wgtest"
+	"github.com/Biezax/wgctrl/wgtypes"
 )
 
 // Example string source (with some slight modifications to use all fields):

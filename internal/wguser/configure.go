@@ -8,7 +8,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/wgtypes"
 )
 
 // configureDevice configures a device specified by its path.

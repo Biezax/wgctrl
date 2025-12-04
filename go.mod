@@ -1,4 +1,4 @@
-module github.com/danpashin/wgctrl
+module github.com/Biezax/wgctrl
 
 go 1.20
 

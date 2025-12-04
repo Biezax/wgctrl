@@ -4,10 +4,10 @@
 package wgctrl
 
 import (
-	"github.com/danpashin/wgctrl/internal/wginternal"
-	"github.com/danpashin/wgctrl/internal/wglinux"
-	"github.com/danpashin/wgctrl/internal/wguser"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/internal/wginternal"
+	"github.com/Biezax/wgctrl/internal/wglinux"
+	"github.com/Biezax/wgctrl/internal/wguser"
+	"github.com/Biezax/wgctrl/wgtypes"
 )
 
 // newClients configures wginternal.Clients for Linux systems.

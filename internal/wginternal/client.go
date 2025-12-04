@@ -4,7 +4,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/wgtypes"
 )
 
 // ErrReadOnly indicates that the driver backing a device is read-only. It is

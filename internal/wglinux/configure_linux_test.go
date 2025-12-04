@@ -9,8 +9,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/danpashin/wgctrl/internal/wgtest"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/internal/wgtest"
+	"github.com/Biezax/wgctrl/wgtypes"
 	"github.com/mdlayher/genetlink"
 	"github.com/mdlayher/genetlink/genltest"
 	"github.com/mdlayher/netlink"

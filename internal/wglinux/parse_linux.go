@@ -9,8 +9,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/danpashin/wgctrl/internal/wginternal"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/internal/wginternal"
+	"github.com/Biezax/wgctrl/wgtypes"
 	"github.com/mdlayher/genetlink"
 	"github.com/mdlayher/netlink"
 	"golang.org/x/sys/unix"

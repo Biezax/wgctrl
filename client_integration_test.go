@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/danpashin/wgctrl"
-	"github.com/danpashin/wgctrl/internal/wginternal"
-	"github.com/danpashin/wgctrl/internal/wgtest"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl"
+	"github.com/Biezax/wgctrl/internal/wginternal"
+	"github.com/Biezax/wgctrl/internal/wgtest"
+	"github.com/Biezax/wgctrl/wgtypes"
 	"github.com/google/go-cmp/cmp"
 	"github.com/mikioh/ipaddr"
 )

@@ -3,8 +3,8 @@ package wgctrl
 import (
 	"os"
 
-	"github.com/danpashin/wgctrl/internal/wginternal"
-	"github.com/danpashin/wgctrl/wgtypes"
+	"github.com/Biezax/wgctrl/internal/wginternal"
+	"github.com/Biezax/wgctrl/wgtypes"
 )
 
 // Expose an identical interface to the underlying packages.
