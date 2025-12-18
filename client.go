@@ -82,12 +82,17 @@ func (c *Client) Device(name string) (*wgtypes.Device, error) {
 // If the device specified by name does not exist or is not a WireGuard device,
 // an error is returned which can be checked using `errors.Is(err, os.ErrNotExist)`.
 func (c *Client) ConfigureDevice(name string, cfg wgtypes.Config) error {
+	var lastErr error
 	for _, wgc := range c.cs {
 		err := wgc.ConfigureDevice(name, cfg)
 		if err == nil {
 			return nil
 		}
+		lastErr = err
 	}
 
+	if lastErr != nil {
+		return lastErr
+	}
 	return os.ErrNotExist
 }
