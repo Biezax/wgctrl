@@ -1,6 +1,7 @@
 package wgctrl
 
 import (
+	"errors"
 	"os"
 
 	"github.com/Biezax/wgctrl/internal/wginternal"
@@ -82,17 +83,17 @@ func (c *Client) Device(name string) (*wgtypes.Device, error) {
 // If the device specified by name does not exist or is not a WireGuard device,
 // an error is returned which can be checked using `errors.Is(err, os.ErrNotExist)`.
 func (c *Client) ConfigureDevice(name string, cfg wgtypes.Config) error {
-	var lastErr error
+	var errs []error
 	for _, wgc := range c.cs {
 		err := wgc.ConfigureDevice(name, cfg)
 		if err == nil {
 			return nil
 		}
-		lastErr = err
+		errs = append(errs, err)
 	}
 
-	if lastErr != nil {
-		return lastErr
+	if len(errs) > 0 {
+		return errors.Join(errs...)
 	}
 	return os.ErrNotExist
 }
