@@ -187,7 +187,7 @@ func (c *Client) execute(command uint8, flags netlink.HeaderFlags, attrb []byte)
 	// Convert "no such device" and "not a wireguard device" to an error
 	// compatible with os.ErrNotExist for easy checking.
 	case unix.ENODEV, unix.ENOTSUP:
-		return nil, os.ErrNotExist
+		return nil, fmt.Errorf("%w: %v (netlink family: %s)", os.ErrNotExist, oerr.Err, c.family.Name)
 	default:
 		// Expose the inner error directly (such as EPERM).
 		return nil, oerr.Err
